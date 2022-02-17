@@ -60,8 +60,7 @@ Pilha empilhaElemento(Pilha p, int e)
     return (novo);
 }
 
-//int *e?
-Pilha desempilha(Pilha p)
+Pilha desempilha(Pilha p, int *e)
 {
     Pilha ap;
     
@@ -87,6 +86,7 @@ int main()
     Pilha p;
     p = criaPilha();
     int op;
+    int *e;
     int numeroInserido;
     do
     {
@@ -122,7 +122,7 @@ int main()
             printf("|*******************************************************|\n");
             printf("|                   Retirar elemento                    |\n");
             printf("|*******************************************************|\n");
-            desempilha(p ,);
+            p = desempilha(p, &e);
 
             break;
         case 3:
